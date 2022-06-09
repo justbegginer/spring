@@ -1,4 +1,4 @@
-package org.classes;
+package org.musicClasses;
 
 public interface Music {
     void play();

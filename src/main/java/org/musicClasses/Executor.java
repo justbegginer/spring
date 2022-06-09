@@ -1,6 +1,6 @@
-package org;
+package org.musicClasses;
 
-import org.classes.MusicPlayer;
+import org.musicClasses.MusicPlayer;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Executor {

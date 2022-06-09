@@ -1,7 +1,9 @@
-package org.classes;
+package org.musicClasses;
 
 public class MusicPlayer {
     private Music music;
+    private String name;
+    private int duration;
 
     public MusicPlayer(Music music) {
         this.music = music;
@@ -17,4 +19,5 @@ public class MusicPlayer {
     public void setMusic(Music music) {
         this.music = music;
     }
+
 }

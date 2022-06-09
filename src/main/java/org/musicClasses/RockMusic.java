@@ -1,4 +1,4 @@
-package org.classes;
+package org.musicClasses;
 
 public class RockMusic implements Music{
 

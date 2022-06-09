@@ -8,14 +8,14 @@
         http://www.springframework.org/schema/context/spring-context.xsd">
 
     <bean id="rockMusicBean"
-          class="org.classes.RockMusic">
+          class="org.musicClasses.RockMusic">
     </bean>
     <bean id="musicPlayerBean"
-          class="org.classes.MusicPlayer" >
+          class="org.musicClasses.MusicPlayer" >
         <constructor-arg ref="rockMusicBean"/>
     </bean>
     <bean id="musicPlayerSetterBean"
-          class="org.classes.MusicPlayer" >
+          class="org.musicClasses.MusicPlayer" >
         <property name="music" ref = "rockMusicBean"/>
     </bean>
 </beans>
