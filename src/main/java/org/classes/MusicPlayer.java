@@ -2,10 +2,19 @@ package org.classes;
 
 public class MusicPlayer {
     private Music music;
-    public MusicPlayer(Music music){
+
+    public MusicPlayer(Music music) {
         this.music = music;
     }
-    public void playMusic(){
+
+    public MusicPlayer() {
+    }
+
+    public void playMusic() {
         music.play();
+    }
+
+    public void setMusic(Music music) {
+        this.music = music;
     }
 }

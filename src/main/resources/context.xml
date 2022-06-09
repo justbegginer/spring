@@ -14,5 +14,8 @@
           class="org.classes.MusicPlayer" >
         <constructor-arg ref="rockMusicBean"/>
     </bean>
-
+    <bean id="musicPlayerSetterBean"
+          class="org.classes.MusicPlayer" >
+        <property name="music" ref = "rockMusicBean"/>
+    </bean>
 </beans>
