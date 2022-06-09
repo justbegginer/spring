@@ -1,0 +1,12 @@
+package org;
+
+import org.classes.MusicPlayer;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class Executor {
+    public static void main(String[] args) {
+        ClassPathXmlApplicationContext beans = new ClassPathXmlApplicationContext("context.xml");
+        MusicPlayer musicPlayer = beans.getBean("musicPlayerBean", MusicPlayer.class);
+        musicPlayer.playMusic();
+    }
+}
