@@ -38,12 +38,6 @@
     </bean>
     <bean id="musicPlayerByListBean"
           class="org.musicClasses.MusicPlayer">
-        <constructor-arg>
-            <list value-type="org.musicClasses.Music">
-                <ref bean="classicMusicBean"/>
-                <ref bean="rapMusicBean"/>
-                <ref bean="rockMusicBean"/>
-            </list>
-        </constructor-arg>
+        <constructor-arg ref = "musicList"/>
     </bean>
 </beans>
