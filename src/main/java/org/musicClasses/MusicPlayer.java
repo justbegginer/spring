@@ -1,11 +1,19 @@
 package org.musicClasses;
 
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
+
 import java.util.ArrayList;
 import java.util.List;
 
+@Component
+@Scope("prototype")
 public class MusicPlayer {
     private ArrayList<Music> music;
+    @Value("${musicPlayer.name}")
     private String name;
+    @Value("${musicPlayer.duration}")
     private int duration;
 
     public MusicPlayer(Music music) {
